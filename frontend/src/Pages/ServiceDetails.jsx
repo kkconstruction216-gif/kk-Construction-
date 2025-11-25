@@ -15,7 +15,7 @@ export default function ServiceDetails() {
  useEffect(() => {
   const fetchService = async () => {
     try {
-      const res = await axios.get("https://kk-officail.onrender.com/api/services");
+      const res = await axios.get("https://kk-construction.onrender.com/api/services");
       const allServices = res.data.services || [];
 
       const found = allServices.find((s) => s._id === id);

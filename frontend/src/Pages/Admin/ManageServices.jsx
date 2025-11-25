@@ -26,7 +26,7 @@ export default function ManageServices() {
   // ✅ Fetch All Services
   const fetchServices = async () => {
     try {
-      const res = await axios.get(`https://kk-officail.onrender.com/api/services`);
+      const res = await axios.get(`https://kk-construction.onrender.com/api/services`);
       setServices(res.data?.services || []);
     } catch (error) {
       console.error("Error fetching services:", error);
@@ -61,13 +61,13 @@ export default function ManageServices() {
     try {
       if (editingService) {
         await axios.put(
-          `https://kk-officail.onrender.com/api/services/${editingService._id}`,
+          `https://kk-construction.onrender.com/api/services/${editingService._id}`,
           data,
           { headers: { "Content-Type": "multipart/form-data" } }
         );
         toast.success("Service updated successfully!");
       } else {
-        await axios.post(`https://kk-officail.onrender.com/api/services`, data, {
+        await axios.post(`https://kk-construction.onrender.com/api/services`, data, {
           headers: { "Content-Type": "multipart/form-data" },
         });
         toast.success("Service added successfully!");
@@ -91,7 +91,7 @@ export default function ManageServices() {
 
     try {
       setUploading(true);
-      await axios.delete(`https://kk-officail.onrender.com/api/services/${id}`);
+      await axios.delete(`https://kk-construction.onrender.com/api/services/${id}`);
       toast.success("Service deleted successfully!");
       fetchServices();
     } catch (error) {

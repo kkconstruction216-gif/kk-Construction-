@@ -13,7 +13,7 @@ const ImageGallery = () => {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const res = await axios.get(`https://kk-officail.onrender.com/api/gallery`);
+        const res = await axios.get(`https://kk-construction.onrender.com/api/gallery`);
         setImages(res.data);
       } catch (error) {
         console.error("Error fetching images:", error);

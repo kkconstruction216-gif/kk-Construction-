@@ -17,7 +17,7 @@ export default function TeamSection() {
   useEffect(() => {
     const fetchTeam = async () => {
       try {
-        const res = await axios.get(`https://kk-officail.onrender.com/api/team`);
+        const res = await axios.get(`https://kk-construction.onrender.com/api/team`);
         const allTeam = res.data?.team || [];
 
         const sortedTeam = allTeam.sort(

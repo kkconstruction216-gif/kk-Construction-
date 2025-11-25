@@ -23,7 +23,7 @@ export default function AllServices() {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const res = await axios.get("https://kk-officail.onrender.com/api/services");
+        const res = await axios.get("https://kk-construction.onrender.com/api/services");
         const srv = res.data.services || res.data; // depending on API shape
         setServices(srv);
         setFilteredServices(srv);

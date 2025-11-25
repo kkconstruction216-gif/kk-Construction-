@@ -14,7 +14,7 @@ export default function ProjectDetails() {
   useEffect(() => {
     const fetchProject = async () => {
   try {
-    const res = await axios.get(`https://kk-officail.onrender.com/api/projects`);
+    const res = await axios.get(`https://kk-construction.onrender.com/api/projects`);
     const allProjects = res.data.projects || [];
 
     const found = allProjects.find((p) => p._id === id);

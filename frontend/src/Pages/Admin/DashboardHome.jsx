@@ -35,12 +35,12 @@ export default function DashboardHome() {
         testimonialsRes,
         galleryRes,
       ] = await Promise.all([
-        axios.get(`https://kk-officail.onrender.com/api/projects`),
-        axios.get(`https://kk-officail.onrender.com/api/services`),
-        axios.get(`https://kk-officail.onrender.com/api/team`),
-        axios.get(`https://kk-officail.onrender.com/api/all`),
-        axios.get(`https://kk-officail.onrender.com/api/testimonials`),
-        axios.get(`https://kk-officail.onrender.com/api/gallery`), // change to your deployed link if hosted
+        axios.get(`https://kk-construction.onrender.com/api/projects`),
+        axios.get(`https://kk-construction.onrender.com/api/services`),
+        axios.get(`https://kk-construction.onrender.com/api/team`),
+        axios.get(`https://kk-construction.onrender.com/api/all`),
+        axios.get(`https://kk-construction.onrender.com/api/testimonials`),
+        axios.get(`https://kk-construction.onrender.com/api/gallery`), // change to your deployed link if hosted
       ]);
 
       const testimonials = testimonialsRes.data || [];
