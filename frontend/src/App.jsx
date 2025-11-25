@@ -39,6 +39,8 @@ import ImageGallery from "./Pages/ImageGallery.jsx";
 import ManageGallery from "./Pages/Admin/ManageGallery.jsx";
 import ProjectDetails from "./Pages/ProjectDetails.jsx";
 import ServiceDetails from "./Pages/ServiceDetails.jsx";
+import AddProject from "./Pages/Admin/AddProject.jsx";
+import EditProject from "./Pages/Admin/EditProject.jsx";
 
 
   
@@ -107,6 +109,8 @@ function App() {
           <Route path="services" element={<ManageServices />} />
           <Route path="review" element={<AdminTestimonials />} />
           <Route path="MangeGallery" element={<ManageGallery />} />
+            <Route path="add-project" element={<AddProject />} />
+                 <Route path="edit-project/:id" element={<EditProject />} />
         </Route>
       </Routes>
     </Router>

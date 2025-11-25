@@ -185,7 +185,7 @@ export default function HeroSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full py-16 md:mt-20 px-4 sm:px-8 lg:px-16 bg-white"
+      className="relative w-full py-16 mt-10 md:mt-20 px-4 sm:px-8 lg:px-16 bg-white"
       aria-label="Construction Services Hero Section"
     >
       {/* Background Accent */}
