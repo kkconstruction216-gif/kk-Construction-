@@ -211,21 +211,20 @@ export default function HeroSection() {
           </div>
 
           {/* Right: Highlights */}
-          <div ref={highlightsRef} className="flex-1 pt-2 md:pt-0 flex flex-col gap-6">
           
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {highlightCards.map((card, idx) => (
-                <div
-                  key={idx}
-                  className="flex items-center gap-3 bg-white border border-gray-200 rounded-xl p-3 shadow-lg hover:shadow-2xl transition-all cursor-pointer"
-                >
-                  <div className="text-2xl">{card.icon}</div>
-                  <h4 className="font-semibold text-gray-900">{card.title}</h4>
-                </div>
-              ))}
-            </div>
+      <div ref={highlightsRef} className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+        {highlightCards.map((card, idx) => (
+          <div
+            key={idx}
+            className="flex items-center gap-3 bg-white border border-gray-200 rounded-xl p-4 shadow-lg hover:shadow-2xl transition-all cursor-pointer"
+          >
+            <div className="text-3xl">{card.icon}</div>
+            <h4 className="text-base sm:text-lg font-semibold text-gray-900">
+              {card.title}
+            </h4>
           </div>
+        ))}
+      </div>  
         </div>
 
         {/* Services Pills */}

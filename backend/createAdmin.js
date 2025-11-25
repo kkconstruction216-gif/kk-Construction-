@@ -14,7 +14,7 @@ const createAdmin = async () => {
 
 
   const email = "jangdeh77@gmail.com";
-  const password = "new@123 "; // plain password
+  const password = "new@123 "; // plain password  
 
   const salt = await bcrypt.genSalt(10);
   const hashedPassword = await bcrypt.hash(password, salt);
