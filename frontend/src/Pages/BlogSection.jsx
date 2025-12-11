@@ -2,36 +2,39 @@ import React from "react";
 import { Calendar, ArrowRight } from "lucide-react";
 import useScrollReveal from "../Hooks/useScrollReveal";
 
-import blog1 from "../assets/blog1.webp";
-import blog2 from "../assets/blog2.webp";
-import blog3 from "../assets/blog3.png";
+import blog1 from "../assets/blog1.jpeg";
+import blog2 from "../assets/blog2.jpeg";
+import blog3 from "../assets/blog3.jpeg";
 
 export default function BlogSection() {
   const blogs = [
+  {
+  title: "Kamlesh Yadav Receives Global Icon Award",
+  category: "Achievements",
+  date: "March 17, 2025",
+  image: blog1, 
+  excerpt:
+    "KK Construction’s director, Kamlesh Yadav, received the Global Icon Award 2023 in New Delhi for his outstanding contribution to the construction industry.",
+}
+,
     {
-      title: "How Technology is Revolutionizing Construction",
-      category: "Construction Trends",
-      date: "March 17, 2025",
-      image: blog1,
-      excerpt:
-        "Discover how innovative tools and automation are transforming the construction industry for better speed, safety, and efficiency.",
-    },
-    {
-      title: "5 Essential Steps for a Successful Construction Project",
-      category: "Project Management",
-      date: "March 16, 2025",
-      image: blog2,
-      excerpt:
-        "Learn the key steps that ensure your construction projects are delivered on time, on budget, and up to quality standards.",
-    },
-    {
-      title: "Site Safety Tips: Ensuring a Smooth Construction Process",
-      category: "Safety & Compliance",
-      date: "March 15, 2025",
-      image: blog3,
-      excerpt:
-        "Safety first! Explore essential safety practices that keep workers protected and sites running smoothly.",
-    },
+  title: "Kamlesh Yadav Honored by Yadav Mitra Mandal",
+  category: "Community Event",
+  date: "November 2025",
+  image: blog2, // replace with your actual image variable
+  excerpt:
+    "During the 12th Diwali Milan program in Bhilai, the Yadav Mitra Mandal honored KK Construction's director, Kamlesh Yadav. The event included sweet distribution, a litti-chokha feast, and festival greetings for Dhanteras, Laxmi Puja, Chhath Puja, and the New Year.",
+}
+,
+   {
+  title: "Dundera Cricket Tournament Concludes with Prize Distribution",
+  category: "Sports Event",
+  date: "November 2025",
+  image: blog3, // replace with your actual image variable
+  excerpt:
+    "The Dundera cricket tournament, organized by Valengers Sports, concluded with a grand prize distribution ceremony. Chief Guest Shashi Sinha, Mayor of Risali Municipal Corporation, awarded the winning teams with cash prizes and trophies.",
+}
+,
   ];
 
   // Section reveal

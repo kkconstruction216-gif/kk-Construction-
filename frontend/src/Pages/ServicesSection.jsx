@@ -9,7 +9,9 @@ export default function ServicesSection() {
   const [services, setServices] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectedService, setSelectedService] = useState(null);
-
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
   const revealRef = useScrollReveal(); // ✅ Scroll animation ref
    const gridRef = useScrollReveal()
   useEffect(() => {

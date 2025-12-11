@@ -13,14 +13,14 @@ export const getAllServices = async (req, res) => {
 // ✅ Add New Service
 export const addService = async (req, res) => {
   try {
-    const { title, desc, icon } = req.body;
+    const { title, desc, icon  } = req.body;
     const imageUrl = req.file ? req.file.path : "";
 
     const newService = await Service.create({
       title,
       desc,
       icon,
-      image: imageUrl,
+      image :imageUrl,
     });
 
     res.status(201).json({ message: "Service added", service: newService });

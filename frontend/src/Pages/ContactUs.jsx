@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { Phone, MapPin, LucideYoutube } from "lucide-react";
 import useScrollReveal from "../Hooks/useScrollReveal";
@@ -8,11 +8,17 @@ const socialLinks = [
   { Icon: LucideYoutube, url: "https://youtube.com/@kkconatruction?si=LwMQQZ6nUOsupFhu" },
 ];
 
+
+
 export default function ContactUs() {
   const sectionRef = useScrollReveal();
   const headerRef = useScrollReveal();
   const formRef = useScrollReveal();
   const infoRef = useScrollReveal();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const [formData, setFormData] = useState({
     name: "",

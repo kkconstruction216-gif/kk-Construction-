@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Plus } from "lucide-react";
 import { CardBody, CardContainer, CardItem } from "../Component/ui/3d-card";
 import HandShake from "../assets/handshake.jpeg";
@@ -7,6 +7,9 @@ import useScrollReveal from "../Hooks/useScrollReveal";
 
 export default function AboutSection() {
   const [imgLoaded, setImgLoaded] = useState(false);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // Scroll reveal refs
   const sectionRef = useScrollReveal();

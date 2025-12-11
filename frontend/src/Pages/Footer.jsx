@@ -1,5 +1,6 @@
 import { Facebook, Twitter, Linkedin, Instagram, Send, MessageCircle, LucideYoutube } from "lucide-react";
 import logo from "../assets/kklogo.jpeg";
+import { Link } from "react-router-dom";
 const socialLinks = [
     { Icon: Facebook, url: "https://www.facebook.com/share/1CTPxjQDWR/" },  
    
@@ -109,8 +110,11 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row px-10 justify-between items-center text-sm bg-orange-600 w-full text py-6">
         <p>© 2025 KK Construction. All Rights Reserved.</p>
         <div className="flex space-x-4 mt-3 md:mt-0">
-          <a href="#" className="hover:underline">Terms & Conditions</a>
-          <a href="#" className="hover:underline">Privacy Policy</a>
+          {/* <a href="/terms">Terms & Conditions</a> */}
+         
+        <Link to="/terms" className="hover:underline" >Terms & Conditions </Link>
+       
+           <Link to="/privacy" className="hover:underline">Privacy Policy</Link>
         </div>
       </div>
 

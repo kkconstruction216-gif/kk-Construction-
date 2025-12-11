@@ -10,6 +10,9 @@ export default function AllTeam() {
   const [selectedMember, setSelectedMember] = useState(null);
 
   const sectionRef = useScrollReveal();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     const fetchAllTeam = async () => {

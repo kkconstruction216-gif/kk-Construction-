@@ -11,7 +11,9 @@ export default function ServiceDetails() {
   const [service, setService] = useState(null);
   const [loading, setLoading] = useState(true);
   const sectionRef = useScrollReveal();
-
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
  useEffect(() => {
   const fetchService = async () => {
     try {

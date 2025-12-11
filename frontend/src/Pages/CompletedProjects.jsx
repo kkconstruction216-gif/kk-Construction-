@@ -14,6 +14,9 @@ export default function CompletedProjects() {
   const buttonRef = useScrollReveal(); // ✅ FIXED
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  useEffect(() => {
     const fetchProjects = async () => {
       try {
         const res = await axios.get(`https://kk-construction.onrender.com/api/projects`);

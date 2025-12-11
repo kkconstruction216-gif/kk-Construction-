@@ -19,7 +19,9 @@ export default function AllServices() {
   const headerRef = useScrollReveal();
   const filterRef = useScrollReveal();
   const gridRef = useScrollReveal();
-
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
   useEffect(() => {
     const fetchServices = async () => {
       try {

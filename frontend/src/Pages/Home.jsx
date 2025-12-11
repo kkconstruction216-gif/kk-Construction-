@@ -14,6 +14,7 @@ import TestimonialsSection from "./TestimonialsSection";
 import BlogSection from "./BlogSection";
 import FAQSection from "./FAQSection";
 import NewsletterSection from "./NewsletterSection";  
+import { HeroParallaxDemo } from "./HeroParallaxDemo";
 
 const Home = () => {
   const icons = [WifiCog, UserCog, Toilet, ScanFace, Ghost];
@@ -90,6 +91,7 @@ const Home = () => {
 
   return (
     <>
+    {/* <HeroParallaxDemo/> */}
       <HeroSection className="mt-20" />
   
      

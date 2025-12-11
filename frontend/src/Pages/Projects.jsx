@@ -15,7 +15,9 @@ export default function Projects() {
   const [filterType, setFilterType] = useState("All");
   const [selectedProject, setSelectedProject] = useState(null);
 const navigate = useNavigate();
-
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
   // ✅ Scroll Reveal Refs
   const sectionRef = useScrollReveal();
   const headerRef = useScrollReveal();

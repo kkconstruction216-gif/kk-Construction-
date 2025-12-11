@@ -6,50 +6,50 @@ import { IconBuildingSkyscraper } from "@tabler/icons-react";
 
 export  function FeaturesSectionDemo() {
   const features = [
-    {
-      title: "Expert Project Management",
-      description:
-        "From planning to execution, our project managers ensure every detail aligns with quality standards and client expectations.",
-      skeleton: <SkeletonOne />,
-      className:
-        "col-span-1 lg:col-span-4 -b lg:-r dark:-neutral-800",
-    },
-    {
-      title: "Modern Construction Equipment",
-      description:
-        "We use advanced machinery and modern tools to guarantee efficient, safe, and on-time project delivery.",
-      skeleton: <SkeletonTwo />,
-      className: "-b col-span-1 lg:col-span-2 dark:-neutral-800",
-    },
-    {
-      title: "Our Ongoing Projects",
-      description:
-        "Explore our construction works in progress and see how we’re building the future, one project at a time.",
-      skeleton: <SkeletonThree />,
-      className: "col-span-1 lg:col-span-3 lg:-r dark:-neutral-800",
-    },
-    {
-      title: "Building Beyond Boundaries",
-      description:
-        "From residential homes to commercial spaces, we deliver durable, aesthetic, and sustainable construction solutions across regions.",
-      skeleton: <SkeletonFour />,
-      className: "col-span-1 lg:col-span-3 -b lg:-none",
-    },
+     {
+    title: "Expert Project Management",
+    description:
+      "At KK Construction, our project managers oversee every stage from planning to execution, ensuring projects meet the highest standards of quality, safety, and client satisfaction.",
+    skeleton: <SkeletonOne />,
+    className:
+      "col-span-1 lg:col-span-4 -b lg:-r dark:-neutral-800",
+  },
+  {
+    title: "Modern Construction Equipment",
+    description:
+      "We leverage cutting-edge machinery and advanced construction tools to deliver projects efficiently, safely, and on schedule.",
+    skeleton: <SkeletonTwo />,
+    className: "-b col-span-1 lg:col-span-2 dark:-neutral-800",
+  },
+  {
+    title: "Ongoing Projects Showcase",
+    description:
+      "Take a look at our ongoing projects to see how KK Construction is shaping skylines and creating lasting structures across regions.",
+    skeleton: <SkeletonThree />,
+    className: "col-span-1 lg:col-span-3 lg:-r dark:-neutral-800",
+  },
+  {
+    title: "Building Beyond Boundaries",
+    description:
+      "From residential complexes to commercial buildings, we provide durable, aesthetic, and sustainable construction solutions tailored to each client’s vision.",
+    skeleton: <SkeletonFour />,
+    className: "col-span-1 lg:col-span-3 -b lg:-none",
+  },
   ];
 
   return (
     <div className="relative z-20  mt-10 py-10 lg:py-32 max-w-7xl mx-auto">
       <div className="px-8">
         <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-semibold text-black dark:text-white">
-          <span className="text-yellow-600">Building</span> Trust, Quality &
-          Innovation
-        </h4>
+  <span className="text-yellow-600">KK Construction:</span> Building Excellence, Trust & Innovation
+</h4>
 
-        <p className="text-sm lg:text-base max-w-2xl my-4 mx-auto text-neutral-600 dark:text-neutral-300 text-center">
-          We’re more than builders — we’re creators of lasting value. From
-          modern architecture to smart infrastructure, every project we take on
-          reflects our commitment to precision, safety, and excellence.
-        </p>
+<p className="text-sm lg:text-base max-w-2xl my-4 mx-auto text-neutral-600 dark:text-neutral-300 text-center">
+  At KK Construction, we don’t just build structures — we create landmarks. 
+  From residential and commercial buildings to infrastructure projects, every 
+  endeavor demonstrates our commitment to quality, safety, and long-lasting value.
+</p>
+
       </div>
 
       <div className="relative">

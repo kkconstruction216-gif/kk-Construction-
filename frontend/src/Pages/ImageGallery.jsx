@@ -8,7 +8,9 @@ const ImageGallery = () => {
   const [loading, setLoading] = useState(true);
   const sectionRef = useScrollReveal();
     const gridRef = useScrollReveal();
-  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     const fetchImages = async () => {

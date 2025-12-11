@@ -13,7 +13,9 @@ export default function TestimonialsSection() {
   const sectionRef = useScrollReveal();
   const headingRef = useScrollReveal({ delay: 150 });
   const sliderRef = useScrollReveal({ delay: 300 });
-
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
   useEffect(() => {
     axios
       .get(`https://kk-construction.onrender.com/api/testimonials`)

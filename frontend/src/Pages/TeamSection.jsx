@@ -13,7 +13,9 @@ export default function TeamSection() {
   // ✅ Scroll Reveal Refs
   const sectionRef = useScrollReveal();
   const gridRef = useScrollReveal({ delay: 200 });
-
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
   useEffect(() => {
     const fetchTeam = async () => {
       try {
