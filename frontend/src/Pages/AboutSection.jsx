@@ -3,6 +3,7 @@ import { Plus } from "lucide-react";
 import { CardBody, CardContainer, CardItem } from "../Component/ui/3d-card";
 import HandShake from "../assets/handshake.jpeg";
 import hook from "../assets/hook.png";
+import pomplate from "../assets/pomplate.jpeg";
 import useScrollReveal from "../Hooks/useScrollReveal";
 
 export default function AboutSection() {
@@ -120,6 +121,13 @@ export default function AboutSection() {
         alt="Construction crane hook"
         className="absolute top-5 left-4 sm:top-10 sm:left-12 w-10 sm:w-14 md:w-20 h-auto object-contain opacity-80"
       />
+
+   <img
+  src={pomplate}
+  alt="Pomplate"
+  className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto mt-6 object-contain"
+/>
+
     </section>
   );
 }
